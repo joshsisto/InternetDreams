@@ -35,13 +35,28 @@ time.sleep(3)
 browser.find_element_by_xpath("//div[@id='collapse-styles']/div/div/div/div[2]/label/div/i").click()
 # Add style image
 browser.find_element_by_id('style-image').clear()
-browser.find_element_by_id('style-image').send_keys(r'C:\dream\dream_style\circuit2.jpg')
+browser.find_element_by_id('style-image').send_keys(r'C:\dream\dream_style\circuit3.jpg')
+
+time.sleep(3)
+
+## settings
+# click the settings drop down menu
+browser.find_element_by_link_text("Settings").click()
+
+time.sleep(3)
+
+# change resolution from 'Normal' to 'Medium'
+#browser.find_element_by_xpath("(//input[@name='resolution'])[2]").click()
+# click 'Preserve Original Color'
+browser.find_element_by_xpath("(//input[@name='preserveOriginalColors'])[2]").click()
+# change from private to public
+browser.find_element_by_xpath("(//input[@name='access'])[2]").click()
 
 time.sleep(3)
 
 ## Upload dream image from file location and submit
 elem_xpath = browser.find_element_by_xpath('//input[@type=\'file\']')
-elem_xpath.send_keys(r'C:\dream\dream_image\trump1.jpg')
+elem_xpath.send_keys(r'C:\dream\dream_image\eye2.jpg')
 elem_xpath.submit()
 
 browser.close()
