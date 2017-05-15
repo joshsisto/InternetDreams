@@ -18,8 +18,8 @@ except:
 ## Login to https://deepdreamgenerator.com/login
 email_field = browser.find_element_by_name('email')
 password_field = browser.find_element_by_name('password')
-email_field.send_keys('joshsisto@gmail.com')   # Email account used
-password_field.send_keys('forjosh1')          # Password for account
+email_field.send_keys('josh@joshsisto.com')   # Email account used
+password_field.send_keys('Your Password')          # Password for account
 password_field.submit()
 
 time.sleep(3)
