@@ -14,3 +14,5 @@ Place gecko driver here C:\dream\geckodriver.exe
 Dream image directory used C:\dream\dream_image
 
 Dream style directory used C:\dream\dream_image
+
+Make sure to update firefox to the latest version
