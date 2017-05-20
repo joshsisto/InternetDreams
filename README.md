@@ -1,3 +1,4 @@
+Python3.6
 # InternetDreams
 dream.py is a Python 3 application that uses google deep dream generator to create art
 
