@@ -12,4 +12,5 @@ Download gecko driver - https://github.com/mozilla/geckodriver/releases
 Place gecko driver here C:\dream\geckodriver.exe
 
 Dream image directory used C:\dream\dream_image
+
 Dream style directory used C:\dream\dream_image
