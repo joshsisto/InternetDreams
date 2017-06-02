@@ -8,7 +8,7 @@ gallery_url = 'https://deepdreamgenerator.com/gallery/user/370099'
 session_requests = requests.session()
 
 ## payload = dictionary containing your email and password for https://deepdreamgenerator.com/login
-payload = dict(email="joshsisto@gmail.com", password="forjosh1")
+payload = dict(email="josh@joshsisto.com", password="PASSWORD")
 
 result = session_requests.post(login_url, data = payload, headers = dict(referer = login_url))
 
