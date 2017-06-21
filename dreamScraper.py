@@ -24,7 +24,7 @@ result2 = session_requests.get(gallery_url)
 http_encoding = result2.encoding if 'charset' in result2.headers.get('content-type', '').lower() else None
 html_encoding = EncodingDetector.find_declared_encoding(result2.content, is_html=True)
 encoding = html_encoding or http_encoding
-soup = BeautifulSoup(result2.content, from_encoding=encoding)
+soup = BeautifulSoup(result2.content, 'lxml')
 
 ## create empty list
 link_list = []
